@@ -22,13 +22,11 @@ app.post('/todos', (req, res) => {
     }, (e) => {
         res.status(400).send(e);
     })
-})
-
-// app.get('/todos', (req, res) => {
-
-// })
+});
 
 
 app.listen(port, () => {
     console.log('Server listenin on port', port);
 });
+
+module.exports = {app}
