@@ -6,6 +6,6 @@ const LOCAL_MONGO = "mongodb://localhost:27017/TodoApp";
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || LOCAL_MONGO);
+mongoose.connect(process.env.MONGODB_URI);
 
 module.exports = {mongoose};
